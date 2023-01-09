@@ -1,0 +1,174 @@
+@charset "UTF8";
+@font-face {
+    font-family: 'idrod';
+    src: url('fontes/idroid.otf') format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*   :root{
+    --cor0: #007573
+    --cor1: #4AF7F4
+    --cor2: #00F5EF
+    --cor3: #00C2BF
+}
+     
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #4AF7F4;
+    
+}
+
+a.links::after {
+    content: '\00a0\1F517';
+}
+
+header {
+    background-image: linear-gradient(to top, #007573, #00F5EF);
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.432);
+    padding: 5px;
+    margin: -10px -8px 0px -8px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.432);
+}
+
+header > h1 {
+    font-size: 2.5em;
+}
+
+header > nav {
+    text-align: left;
+    padding: 8px;
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    border-radius: 3px;
+    transition-duration: 0.3s;
+    
+}
+header > nav > a:hover {
+    background-color: #4af7f491 ;
+}
+
+main {
+    background-color: white;
+    padding: 15px;
+    min-width: 280px;
+    max-width: 1050px;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 2px 5px 1px  rgba(0, 0, 0, 0.432);
+}
+main > h1 {
+    font-family: idrod,sans-serif;
+    color: #007573;
+}
+main > h2 {
+    font-family: idrod,sans-serif;
+    background-image: linear-gradient(to right, #4af7f463, #4af7f43d);
+    font-weight:900;
+    color: #007573;
+    text-indent: 8px;
+}
+main > p{
+    text-align: justify;
+    text-indent: 25px;
+    line-height: 1.8em;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.video {
+    background-color: #007573;
+    margin: 0px -15px 30px -15px;
+    padding: 10px;
+    padding-bottom: 56.8%;
+    position: relative;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+    /*iframe {                  outro jeito
+    display: block;
+    margin: auto;
+    width: 75%;
+    height: 300px;
+    padding: 5px;
+}*/
+    
+}
+.links {
+    text-decoration: none;
+    color: #025e5c;
+    background-color: #4af7f481;
+    padding: 2px 5px;
+    font-weight: bold;
+}
+
+.links:hover {
+    text-decoration: underline;
+    color: #02c9c5;
+}
+
+main strong {
+    color: #004948;
+    font-weight: 700;
+    
+}
+
+main >aside {
+    background-color: #4af7f469;
+    margin: 5px;
+    padding: 0px 0px 5px 2px;
+    border-radius: 10px 10px;
+    margin: 5px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.39);
+}
+
+main > aside > h3 {
+    background-color: #00F5EF;
+    color:white;
+    padding: 15px ;
+    border-radius: 10px 10px 0px 0px;
+    margin-left: -2px;
+    margin-right: -1px;
+}
+
+main p {
+    text-indent: 30px;
+    text-align: justify;
+}
+main > aside > nav > ul {
+    list-style-type: '\2714\00a0';
+    columns: 2;
+}
+footer{
+    background-color: #007573;
+    text-align: center;
+    color: white;
+    padding: 1px;
+    margin: 10px -8px -8px -8px ;
+}
+
+
+

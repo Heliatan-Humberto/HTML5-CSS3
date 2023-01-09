@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 02</title>
+    <link rel="shortcut icon" href="imagens/react - Copia.ico">
+
+</head>
+<body>
+    <h1>This is the second page of my site</h1>
+    
+    <h2>insert locally hosted videos</h2>
+     <h3>this video is hosted on my own server:</h3>
+
+    <video width= "400" poster="imagens/avi.png" controls>
+        <source src="midia/avi.m4v" type="video/mp4"> <!--primeiro o menor -->
+        <source src="midia/avi.mp4" type="video/mp4">
+        <p>seu navegagor não possue compatibilidade com reprodução de videos</p>
+    </video>
+
+    <h2>insert youtube video:</h2>
+     <h3>this video is hosted on youtube:</h3>
+         
+    <h2>play audio</h2>
+    <p>lets learn to put audio</p>
+
+    <!-- tipo  1-->
+        <audio src="midia/God Rest Ye Merry Gentlmen - DJ Williams.mp3" controls ></audio>
+    <!-- tipo 2-->
+
+         <audio preload="metadata" controls loop> 
+            <source  src="midia/God Rest Ye Merry Gentlmen - DJ Williams.mp3" type="audio/mpeg">
+         </audio>
+
+    
+    <h2>dinamic image:</h2>
+     <p>open this site in diferents devices or different sizes </p>
+
+     <picture>
+        <source media="(max-width: 750px)" srcset="projeto11/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="projeto11/m.png" type="image/png">
+        <img src="projeto11/g.png" alt="flexible image">
+     </picture>
+
+    <h1>link no follow</h1>
+    <P><a href="https://www.youtube.com" target="_blank" rel="nofollow">link</a></P>
+    
+</body>
+</html>
