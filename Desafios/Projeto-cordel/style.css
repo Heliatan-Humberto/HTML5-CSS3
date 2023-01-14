@@ -40,17 +40,15 @@ a:hover {
     background-attachment: fixed;
     background-size: cover;
     margin: -50px -8px -8px -8px ;
-    width: auto;
     height: 100vh;
 
 }
 .img2 {
     background-image: url(imagens/background002.jpg);
-    background-position: center center;
+    background-position:  center center;
     background-attachment: fixed;
     background-size: cover;
     margin: -50px -8px -8px -8px ;
-    width: auto;
     height: 100vh;
 }
 
