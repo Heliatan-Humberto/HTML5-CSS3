@@ -28,7 +28,10 @@ a {
     font-weight: 600;
     text-decoration: none;
     color: white;
+}
 
+a:hover {
+    text-decoration: underline;
 }
 
 .img1 {
