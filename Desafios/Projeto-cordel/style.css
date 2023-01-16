@@ -41,6 +41,7 @@ a:hover {
     background-size: cover;
     margin: -50px -8px -8px -8px ;
     height: 100vh;
+    box-shadow: inset 6px 6px 12px 6px rgba(0, 0, 0, 0.452);
 
 }
 .img2 {
@@ -50,6 +51,7 @@ a:hover {
     background-size: cover;
     margin: -50px -8px -8px -8px ;
     height: 100vh;
+    box-shadow: inset 6px 6px 12px 6px rgba(0, 0, 0, 0.452);
 }
 
 article .p1 {
