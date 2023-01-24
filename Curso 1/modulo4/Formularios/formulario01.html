@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>my first Form</h1>
+    <form action="cadastro.php" method="post
+    "> <!--autocomplete="off/on"-->
+        <p><label for="iname">Name:</label>
+             <input type="text" name="Name" id="iname"></p>
+        <p><label for="ilastname">last name:</label>
+             <input type="text" name="Lastname" id="ilastname"></p>
+        <p><input type="submit" value="Submit"></p>
+    </form>
+
+    <form action="cadastro.php" method="post" autocomplete="on"> 
+        <p>
+            <label for="iuser">user:</label>
+             <input type="text" name="user" id="iuser" required minlength="5" maxlength="15" size="10" placeholder="username" autocomplete="username">
+        </p>
+        <p>
+            <label for="ipassword">Passord:</label>
+            <input type="password" name="password" id="ipassword" required minlength="6" maxlength="20" size="10" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
+</body>
+</html>
