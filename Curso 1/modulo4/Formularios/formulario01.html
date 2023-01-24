@@ -8,8 +8,8 @@
 </head>
 <body>
     <h1>my first Form</h1>
-    <form action="cadastro.php" method="post
-    "> <!--autocomplete="off/on"-->
+    <form action="cadastro.php" method="post"> <!--autocomplete="off/on"-->
+
         <p><label for="iname">Name:</label>
              <input type="text" name="Name" id="iname"></p>
         <p><label for="ilastname">last name:</label>
@@ -20,7 +20,7 @@
     <form action="cadastro.php" method="post" autocomplete="on"> 
         <p>
             <label for="iuser">user:</label>
-             <input type="text" name="user" id="iuser" required minlength="5" maxlength="15" size="10" placeholder="username" autocomplete="username">
+             <input type="text" name="user" id="iuser" required minlength="5" maxlength="20" size="10" placeholder="username" autocomplete="username">
         </p>
         <p>
             <label for="ipassword">Passord:</label>
@@ -29,6 +29,28 @@
         <p>
             <input type="submit" value="Submit">
             <input type="reset" value="Clear">
+        </p>
+    </form>
+
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="icompletename">Full Name: </label>
+            <input type="text" name="completename" id="icompletename" minlength="5" maxlength="40" placeholder="Full Name" required> <!--value="oq ja vai aparecer"-->
+        </p>
+        <p>
+            <label for="imonth">Scool year: </label>
+            <input type="month" name="date" id="imonth">
+        </p>
+        <p>
+            <label for="idate">Test day</label>
+            <input type="date" name="date" id="idate">
+        </p>
+        <p>
+            <label for="igrades">Grades: </label>
+            <input type="number" name="grades" id="igrades" min="0" max="10" step="0.1" required>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
         </p>
     </form>
 </body>
