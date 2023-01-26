@@ -8,11 +8,11 @@
 </head>
 <body>
     <h1>exemplo de Formularioo</h1>  <!--checked aparece marcado-->
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="post">
         <fieldset>
             <legend>Sexo</legend>
-            <input type="radio" name="sexo" id="imax"> <label for="imax">Masculino</label>
-            <input type="radio" name="sexo" id="ifem"> <label for="ifem">Feminino</label>
+            <input type="radio" name="sexo" id="imax" value="M"> <label for="imax">Masculino</label>
+            <input type="radio" name="sexo" id="ifem" value="F"> <label for="ifem">Feminino</label>
         </fieldset>
         <fieldset>
             <legend>Esportes Favoritos</legend>
@@ -24,6 +24,18 @@
 
             <input type="checkbox" name="bas" id="ibas"> <label for="ibas">Basquete</label>
         </fieldset>
+        <p>
+            <label for="icolor">Cor:</label>
+            <input type="color" name="color" id="icolor">
+        </p>
+        <p>
+            <label for="nivel">Nivel de Satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="10" value="1">
+        </p>
+        <p>
+            <label for="ifile">Foto de Perfil</label>
+            <input type="file" name="file" id="ifile">
+        </p>
         <p>
             <input type="submit" value="Enviar">
         </p>
