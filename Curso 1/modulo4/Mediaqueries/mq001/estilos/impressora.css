@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/*Estilos para print*/
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+header {
+    background-color: aquamarine;
+}
+
+header > h1 {
+    text-align: center;
+}
+menu {
+    display: none;
+}
+
+article::after {
+    content: 'Esse artigo foi baixado através do site xxx.xxxxxx.xxx.xx';
+}
