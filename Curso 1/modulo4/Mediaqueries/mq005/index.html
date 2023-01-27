@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="meni">
             <ul>
-                <li><a href="#"></a>Home</li>
-                <li><a href="#"></a>fale conosco</li>
-                <li><a href="#"></a>próxima página</li>
-                <li><a href="#"></a>news</li>
-                <li><a href="#"></a>sla</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">fale conosco</a></li>
+                <li><a href="#">próxima página</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="#">sla</a></li>
             </ul>
         </menu>
     </header>
@@ -28,5 +30,14 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vitae quos porro, consectetur molestiae totam? Recusandae suscipit rem ullam voluptas unde modi deserunt similique, neque illo quia aspernatur eum quas! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore mollitia, id ratione similique architecto quod necessitatibus enim sequi eligendi. Non alias, natus fuga ad maxime maiores inventore provident similique a.</p>
         </article>
     </main>
+    <script>
+        function clickMenu () {
+            if (meni.style.display == 'block') {
+                meni.style.display = 'none'
+            } else {
+                meni.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
