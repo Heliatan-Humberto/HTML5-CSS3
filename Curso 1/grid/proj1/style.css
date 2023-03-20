@@ -33,17 +33,31 @@ h1 {
     text-align: center;
     padding: 25px;
 }
+p {
+    text-align: center;
+    padding-bottom: 10px;
+}
 img {
     max-width: 100%;
     display: block;
 }
-.flex {
-    display: flex;
-    flex-wrap: wrap;
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     max-width: 800px;
-    margin: 0 auto;
+    grid-gap: 20px;
+    margin: auto;
+    padding: 10px;
 }
-.flex div {
-    flex: 1 1 200px;
-    margin: 10px;
+.grid1 > div:nth-child(n + 4) {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 10px;
+    align-items: center;
+}
+.grid1 > div.anuncio {
+    grid-column: 1;
+    grid-row: 2 / 5;
+    display: block;
+    color: red;
 }
